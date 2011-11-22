@@ -43,3 +43,14 @@ AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/M
 require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
 
+// libphutil
+require_once __DIR__.'/../vendor/libphutil/src/__phutil_library_init__.php';
+phutil_require_module('phutil', 'utils');
+spl_autoload_unregister('__phutil_autoload');
+
+// XHP
+require_once __DIR__.'/../vendor/xhp/src/core/init.php';
+
+// facebook
+require_once __DIR__.'/../vendor/facebook/src/base_facebook.php';
+require_once __DIR__.'/../vendor/facebook/src/facebook.php';

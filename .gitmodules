@@ -43,3 +43,12 @@
 [submodule "vendor/bundles/Symfony/Bundle/AsseticBundle"]
 	path = vendor/bundles/Symfony/Bundle/AsseticBundle
 	url = http://github.com/symfony/AsseticBundle.git
+[submodule "vendor/libphutil"]
+	path = vendor/libphutil
+	url = https://github.com/facebook/libphutil.git
+[submodule "vendor/xhp"]
+	path = vendor/xhp
+	url = https://github.com/aizatto/xhp.git
+[submodule "vendor/facebook"]
+	path = vendor/facebook
+	url = https://github.com/facebook/php-sdk.git

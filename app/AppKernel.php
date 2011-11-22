@@ -33,4 +33,21 @@ class AppKernel extends Kernel
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
     }
+
+    protected function getEnvParameters() {
+      if (file_exists(__DIR__.'/../.env')) {
+        $contents = file_get_contents(__DIR__.'/../.env');
+        foreach (explode("\n", $contents) as $line) {
+          if (empty($line)) {
+            continue;
+          }
+          putenv($line);
+          list($key, $value) = explode("=", $line);
+          $_SERVER[$key] = $value;
+        }
+      }
+
+      return parent::getEnvParameters();
+    }
+ 
 }

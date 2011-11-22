@@ -1,0 +1,7 @@
+app/logs/*
+app/cache/*
+*.swp
+.DS_Store
+*.php~
+.env
+web/bundles/*
