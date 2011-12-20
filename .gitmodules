@@ -52,3 +52,6 @@
 [submodule "vendor/facebook"]
 	path = vendor/facebook
 	url = https://github.com/facebook/php-sdk.git
+[submodule "vendor/bundles/RoxWay/Bundle/ErrorNotifyBundle"]
+	path = vendor/bundles/RoxWay/Bundle/ErrorNotifyBundle
+	url = https://github.com/szymek/RoxWayErrorNotifyBundle.git

@@ -63,3 +63,7 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
+
+rox_way_error_notify:
+    to_mail: %error_notifier.to%
+    from_mail: %error_notifier.from%

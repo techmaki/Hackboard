@@ -17,3 +17,6 @@ monolog:
             type:  stream
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
+
+rox_way_error_notify:
+  is_enable: true

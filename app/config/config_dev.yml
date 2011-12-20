@@ -21,3 +21,6 @@ monolog:
 
 assetic:
     use_controller: true
+
+rox_way_error_notify:
+  is_enable: false
