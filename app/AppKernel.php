@@ -17,6 +17,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new Aizatto\Bundle\XHPBundle\AizattoXHPBundle(),
+            new RoxWay\Bundle\ErrorNotifyBundle\RoxWayErrorNotifyBundle(),
         );
 
         if ($this->isDebug() ||

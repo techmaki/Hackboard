@@ -14,10 +14,13 @@ $loader->registerNamespaces(array(
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
+    'Aizatto'          => __DIR__.'/../vendor/bundles',
+    'RoxWay'           => __DIR__.'/../vendor/bundles',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
     'Twig_'            => __DIR__.'/../vendor/twig/lib',
+    'xhp_'             => __DIR__.'/../vendor/xhp/src',
 ));
 
 // intl
@@ -50,6 +53,7 @@ spl_autoload_unregister('__phutil_autoload');
 
 // XHP
 require_once __DIR__.'/../vendor/xhp/src/core/init.php';
+require_once __DIR__.'/../vendor/xhp/src/HTML.php';
 
 // facebook
 require_once __DIR__.'/../vendor/facebook/src/base_facebook.php';
