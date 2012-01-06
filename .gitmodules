@@ -55,6 +55,6 @@
 [submodule "vendor/bundles/RoxWay/Bundle/ErrorNotifyBundle"]
 	path = vendor/bundles/RoxWay/Bundle/ErrorNotifyBundle
 	url = https://github.com/szymek/RoxWayErrorNotifyBundle.git
-[submodule "vendor/bundles/Aizatto/Bundle/XHPBundle"]
+[submodule "vendor/bundles/Aizatto/Bundle/AizattoXHPBundle"]
 	path = vendor/bundles/Aizatto/Bundle/XHPBundle
-	url = https://github.com/aizatto/XHPBundle.git
+	url = https://github.com/aizatto/AizattoXHPBundle.git
