@@ -73,3 +73,9 @@
 [submodule "vendor/bundles/FOS/FacebookBundle"]
 	path = vendor/bundles/FOS/FacebookBundle
 	url = https://github.com/FriendsOfSymfony/FOSFacebookBundle.git
+[submodule "vendor/javelin"]
+	path = vendor/javelin
+	url = https://github.com/facebook/javelin.git
+[submodule "vendor/bundles/Aizatto/Bundle/HermesBundle"]
+	path = vendor/bundles/Aizatto/Bundle/HermesBundle
+	url = https://github.com/aizatto/AizattoHermesBundle.git

@@ -21,6 +21,7 @@ class AppKernel extends Kernel
       new FOS\UserBundle\FOSUserBundle(),
       new Aizatto\Bundle\XHPBundle\AizattoXHPBundle(),
       new Aizatto\Bundle\ControllerResolverBundle\AizattoControllerResolverBundle(),
+      new Aizatto\Bundle\HermesBundle\AizattoHermesBundle(),
       new RoxWay\Bundle\ErrorNotifyBundle\RoxWayErrorNotifyBundle(),
       new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
     );
