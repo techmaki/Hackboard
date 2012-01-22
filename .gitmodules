@@ -58,3 +58,18 @@
 [submodule "vendor/bundles/Aizatto/Bundle/XHPBundle"]
 	path = vendor/bundles/Aizatto/Bundle/XHPBundle
 	url = https://github.com/aizatto/XHPBundle.git
+[submodule "vendor/bundles/Knp/Bundle/MarkdownBundle"]
+	path = vendor/bundles/Knp/Bundle/MarkdownBundle
+	url = https://github.com/KnpLabs/KnpMarkdownBundle.git
+[submodule "vendor/bundles/Aizatto/Bundle/ControllerResolverBundle"]
+	path = vendor/bundles/Aizatto/Bundle/ControllerResolverBundle
+	url = https://github.com/aizatto/ControllerResolverBundle.git
+[submodule "vendor/bundles/Aizatto/Bundle/FacebookBundle"]
+	path = vendor/bundles/Aizatto/Bundle/FacebookBundle
+	url = http://github.com/aizatto/AizattoFacebookBundle.git
+[submodule "vendor/bundles/FOS/UserBundle"]
+	path = vendor/bundles/FOS/UserBundle
+	url = https://github.com/FriendsOfSymfony/FOSUserBundle.git
+[submodule "vendor/bundles/FOS/FacebookBundle"]
+	path = vendor/bundles/FOS/FacebookBundle
+	url = https://github.com/FriendsOfSymfony/FOSFacebookBundle.git

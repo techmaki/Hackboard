@@ -67,3 +67,14 @@ jms_security_extra:
 rox_way_error_notify:
     to_mail: %error_notifier.to%
     from_mail: %error_notifier.from%
+
+fos_user:
+    db_driver: orm
+    firewall_name: public
+    user_class: Techmaki\Bundle\HackboardBundle\Entity\User
+
+fos_facebook:
+    file:   %kernel.root_dir%/../vendor/facebook/src/base_facebook.php
+    alias:  facebook
+    app_id: %facebook.app_id%
+    secret: %facebook.app_secret%
