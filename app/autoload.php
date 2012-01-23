@@ -60,3 +60,6 @@ require_once __DIR__.'/../vendor/xhp/src/HTML.php';
 // facebook
 require_once __DIR__.'/../vendor/facebook/src/base_facebook.php';
 require_once __DIR__.'/../vendor/facebook/src/facebook.php';
+
+// Javelin
+require_once __DIR__.'/../vendor/javelin/support/php/Javelin.php';

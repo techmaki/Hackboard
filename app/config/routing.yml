@@ -7,6 +7,10 @@ AizattoHermesBundle:
   resource: "@AizattoHermesBundle/Resources/config/routing.yml"
   prefix:   /_
 
+AizattoFacebookBundle:
+  resource: "@AizattoFacebookBundle/Resources/config/routing.yml"
+  prefix:   /facebook
+
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"

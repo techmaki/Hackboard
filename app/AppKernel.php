@@ -19,9 +19,10 @@ class AppKernel extends Kernel
       new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
       new FOS\FacebookBundle\FOSFacebookBundle(),
       new FOS\UserBundle\FOSUserBundle(),
-      new Aizatto\Bundle\XHPBundle\AizattoXHPBundle(),
       new Aizatto\Bundle\ControllerResolverBundle\AizattoControllerResolverBundle(),
+      new Aizatto\Bundle\FacebookBundle\AizattoFacebookBundle(),
       new Aizatto\Bundle\HermesBundle\AizattoHermesBundle(),
+      new Aizatto\Bundle\XHPBundle\AizattoXHPBundle(),
       new RoxWay\Bundle\ErrorNotifyBundle\RoxWayErrorNotifyBundle(),
       new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
     );

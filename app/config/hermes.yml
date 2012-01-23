@@ -1,5 +1,6 @@
 aizatto_hermes:
   javelin-typeahead:
+    provides: javelin-typeahead
     requires:
       - javelin-install
       - javelin-dom
@@ -7,27 +8,33 @@ aizatto_hermes:
       - javelin-util
     path: vendor/javelin/src/lib/control/typeahead/Typeahead.js
   javelin-magical-init:
+    provides: javelin-magical-init
     requires: {  }
     path: vendor/javelin/src/core/init.js
   javelin-util:
+    provides: javelin-util
     requires: {  }
     path: vendor/javelin/src/core/util.js
   javelin-mask:
+    provides: javelin-mask
     requires:
       - javelin-install
       - javelin-vector
       - javelin-dom
     path: vendor/javelin/src/lib/Mask.js
   javelin-json:
+    provides: javelin-json
     requires:
       - javelin-install
     path: vendor/javelin/src/lib/JSON.js
   javelin-vector:
+    provides: javelin-vector
     requires:
       - javelin-install
       - javelin-event
     path: vendor/javelin/src/lib/Vector.js
   javelin-dom:
+    provides: javelin-dom
     requires:
       - javelin-magical-init
       - javelin-install
@@ -36,6 +43,7 @@ aizatto_hermes:
       - javelin-stratcom
     path: vendor/javelin/src/lib/DOM.js
   javelin-history:
+    provides: javelin-history
     requires:
       - javelin-stratcom
       - javelin-install
@@ -43,6 +51,7 @@ aizatto_hermes:
       - javelin-util
     path: vendor/javelin/src/lib/History.js
   javelin-typeahead-preloaded-source:
+    provides: javelin-typeahead-preloaded-source
     requires:
       - javelin-install
       - javelin-util
@@ -51,6 +60,7 @@ aizatto_hermes:
       - javelin-typeahead-source
     path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadPreloadedSource.js
   javelin-typeahead-source:
+    provides: javelin-typeahead-source
     requires:
       - javelin-install
       - javelin-util
@@ -58,12 +68,14 @@ aizatto_hermes:
       - javelin-typeahead-normalizer
     path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadSource.js
   javelin-typeahead-composite-source:
+    provides: javelin-typeahead-composite-source
     requires:
       - javelin-install
       - javelin-typeahead-source
       - javelin-util
     path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadCompositeSource.js
   javelin-typeahead-ondemand-source:
+    provides: javelin-typeahead-ondemand-source
     requires:
       - javelin-install
       - javelin-util
@@ -72,10 +84,12 @@ aizatto_hermes:
       - javelin-typeahead-source
     path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadOnDemandSource.js
   javelin-typeahead-normalizer:
+    provides: javelin-typeahead-normalizer
     requires:
       - javelin-install
     path: vendor/javelin/src/lib/control/typeahead/normalizer/TypeaheadNormalizer.js
   javelin-tokenizer:
+    provides: javelin-tokenizer
     requires:
       - javelin-dom
       - javelin-util
@@ -83,6 +97,7 @@ aizatto_hermes:
       - javelin-install
     path: vendor/javelin/src/lib/control/tokenizer/Tokenizer.js
   javelin-request:
+    provides: javelin-request
     requires:
       - javelin-install
       - javelin-stratcom
@@ -92,12 +107,14 @@ aizatto_hermes:
       - javelin-dom
     path: vendor/javelin/src/lib/Request.js
   javelin-uri:
+    provides: javelin-uri
     requires:
       - javelin-install
       - javelin-util
       - javelin-stratcom
     path: vendor/javelin/src/lib/URI.js
   javelin-resource:
+    provides: javelin-resource
     requires:
       - javelin-magical-init
       - javelin-stratcom
@@ -105,6 +122,7 @@ aizatto_hermes:
       - javelin-uri
     path: vendor/javelin/src/lib/Resource.js
   javelin-workflow:
+    provides: javelin-workflow
     requires:
       - javelin-stratcom
       - javelin-request
@@ -116,50 +134,60 @@ aizatto_hermes:
       - javelin-uri
     path: vendor/javelin/src/lib/Workflow.js
   javelin-behavior:
+    provides: javelin-behavior
     requires:
       - javelin-magical-init
     path: vendor/javelin/src/lib/behavior.js
   javelin-cookie:
+    provides: javelin-cookie
     requires:
       - javelin-install
       - javelin-util
     path: vendor/javelin/src/lib/Cookie.js
   javelin-view-interpreter:
+    provides: javelin-view-interpreter
     requires:
       - javelin-view
       - javelin-install
     path: vendor/javelin/src/ext/view/ViewInterpreter.js
   javelin-view:
+    provides: javelin-view
     requires:
       - javelin-install
       - javelin-util
     path: vendor/javelin/src/ext/view/View.js
   javelin-view-renderer:
+    provides: javelin-view-renderer
     requires:
       - javelin-install
     path: vendor/javelin/src/ext/view/ViewRenderer.js
   javelin-view-html:
+    provides: javelin-view-html
     requires:
       - javelin-install
       - javelin-view
     path: vendor/javelin/src/ext/view/HTMLView.js
   javelin-view-visitor:
+    provides: javelin-view-visitor
     requires:
       - javelin-install
       - javelin-util
     path: vendor/javelin/src/ext/view/ViewVisitor.js
   javelin-behavior-view-placeholder:
+    provides: javelin-behavior-view-placeholder
     requires:
       - javelin-behavior
       - javelin-dom
       - javelin-view-renderer
     path: vendor/javelin/src/ext/view/ViewPlaceholder.js
   javelin-reactor:
+    provides: javelin-reactor
     requires:
       - javelin-install
       - javelin-util
     path: vendor/javelin/src/ext/reactor/core/Reactor.js
   javelin-reactornode:
+    provides: javelin-reactornode
     requires:
       - javelin-install
       - javelin-reactor
@@ -167,12 +195,14 @@ aizatto_hermes:
       - javelin-reactor-node-calmer
     path: vendor/javelin/src/ext/reactor/core/ReactorNode.js
   javelin-reactor-node-calmer:
+    provides: javelin-reactor-node-calmer
     requires:
       - javelin-install
       - javelin-reactor
       - javelin-util
     path: vendor/javelin/src/ext/reactor/core/ReactorNodeCalmer.js
   javelin-dynval:
+    provides: javelin-dynval
     requires:
       - javelin-install
       - javelin-reactornode
@@ -180,6 +210,7 @@ aizatto_hermes:
       - javelin-reactor
     path: vendor/javelin/src/ext/reactor/core/DynVal.js
   javelin-reactor-dom:
+    provides: javelin-reactor-dom
     requires:
       - javelin-dom
       - javelin-dynval
@@ -188,28 +219,39 @@ aizatto_hermes:
       - javelin-util
     path: vendor/javelin/src/ext/reactor/dom/RDOM.js
   javelin-fx:
+    provides: javelin-fx
     requires:
       - javelin-color
       - javelin-install
       - javelin-util
     path: vendor/javelin/src/ext/fx/FX.js
   javelin-color:
+    provides: javelin-color
     requires:
       - javelin-install
     path: vendor/javelin/src/ext/fx/Color.js
   javelin-event:
+    provides: javelin-event
     requires:
       - javelin-install
     path: vendor/javelin/src/core/Event.js
   javelin-install:
+    provides: javelin-install
     requires:
       - javelin-util
       - javelin-magical-init
     path: vendor/javelin/src/core/install.js
   javelin-stratcom:
+    provides: javelin-stratcom
     requires:
       - javelin-install
       - javelin-event
       - javelin-util
       - javelin-magical-init
     path: vendor/javelin/src/core/Stratcom.js
+  facebook:
+    provides: facebook
+    requires:
+      - javelin-behavior
+      - javelin-stratcom
+    path: src/Techmaki/Bundle/HackboardBundle/Resources/public/js/facebook.js
