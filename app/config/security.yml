@@ -30,6 +30,7 @@ security:
       anonymous: true
       logout:
         path: /facebook/logout
+        success_handler: aizatto_facebook.logout.success_handler
       remember_me:
         key: hackboard_facebook
         always_remember_me: true

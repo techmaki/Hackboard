@@ -83,3 +83,4 @@ fos_facebook:
 aizatto_facebook:
     user_class: Techmaki\Bundle\HackboardBundle\Entity\User
     facebook_user_class: Techmaki\Bundle\HackboardBundle\Entity\FacebookUser
+    facebook_friend_class: Techmaki\Bundle\HackboardBundle\Entity\FacebookFriend
