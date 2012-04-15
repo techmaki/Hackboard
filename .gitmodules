@@ -79,3 +79,6 @@
 [submodule "vendor/bundles/Aizatto/Bundle/HermesBundle"]
 	path = vendor/bundles/Aizatto/Bundle/HermesBundle
 	url = https://github.com/aizatto/AizattoHermesBundle.git
+[submodule "vendor/xhp-twitter-bootstrap"]
+	path = vendor/xhp-twitter-bootstrap
+	url = https://github.com/aizatto/xhp-twitter-bootstrap.git

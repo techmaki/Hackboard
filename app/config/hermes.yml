@@ -1,257 +1,339 @@
 aizatto_hermes:
-  javelin-typeahead:
-    provides: javelin-typeahead
-    requires:
-      - javelin-install
-      - javelin-dom
-      - javelin-vector
-      - javelin-util
-    path: vendor/javelin/src/lib/control/typeahead/Typeahead.js
-  javelin-magical-init:
-    provides: javelin-magical-init
-    requires: {  }
-    path: vendor/javelin/src/core/init.js
-  javelin-util:
-    provides: javelin-util
-    requires: {  }
-    path: vendor/javelin/src/core/util.js
-  javelin-mask:
-    provides: javelin-mask
-    requires:
-      - javelin-install
-      - javelin-vector
-      - javelin-dom
-    path: vendor/javelin/src/lib/Mask.js
-  javelin-json:
-    provides: javelin-json
-    requires:
-      - javelin-install
-    path: vendor/javelin/src/lib/JSON.js
-  javelin-vector:
-    provides: javelin-vector
-    requires:
-      - javelin-install
-      - javelin-event
-    path: vendor/javelin/src/lib/Vector.js
-  javelin-dom:
-    provides: javelin-dom
-    requires:
-      - javelin-magical-init
-      - javelin-install
-      - javelin-util
-      - javelin-vector
-      - javelin-stratcom
-    path: vendor/javelin/src/lib/DOM.js
-  javelin-history:
-    provides: javelin-history
-    requires:
-      - javelin-stratcom
-      - javelin-install
-      - javelin-uri
-      - javelin-util
-    path: vendor/javelin/src/lib/History.js
-  javelin-typeahead-preloaded-source:
-    provides: javelin-typeahead-preloaded-source
-    requires:
-      - javelin-install
-      - javelin-util
-      - javelin-stratcom
-      - javelin-request
-      - javelin-typeahead-source
-    path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadPreloadedSource.js
-  javelin-typeahead-source:
-    provides: javelin-typeahead-source
-    requires:
-      - javelin-install
-      - javelin-util
-      - javelin-dom
-      - javelin-typeahead-normalizer
-    path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadSource.js
-  javelin-typeahead-composite-source:
-    provides: javelin-typeahead-composite-source
-    requires:
-      - javelin-install
-      - javelin-typeahead-source
-      - javelin-util
-    path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadCompositeSource.js
-  javelin-typeahead-ondemand-source:
-    provides: javelin-typeahead-ondemand-source
-    requires:
-      - javelin-install
-      - javelin-util
-      - javelin-stratcom
-      - javelin-request
-      - javelin-typeahead-source
-    path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadOnDemandSource.js
-  javelin-typeahead-normalizer:
-    provides: javelin-typeahead-normalizer
-    requires:
-      - javelin-install
-    path: vendor/javelin/src/lib/control/typeahead/normalizer/TypeaheadNormalizer.js
-  javelin-tokenizer:
-    provides: javelin-tokenizer
-    requires:
-      - javelin-dom
-      - javelin-util
-      - javelin-stratcom
-      - javelin-install
-    path: vendor/javelin/src/lib/control/tokenizer/Tokenizer.js
-  javelin-request:
-    provides: javelin-request
-    requires:
-      - javelin-install
-      - javelin-stratcom
-      - javelin-util
-      - javelin-behavior
-      - javelin-json
-      - javelin-dom
-    path: vendor/javelin/src/lib/Request.js
-  javelin-uri:
-    provides: javelin-uri
-    requires:
-      - javelin-install
-      - javelin-util
-      - javelin-stratcom
-    path: vendor/javelin/src/lib/URI.js
-  javelin-resource:
-    provides: javelin-resource
-    requires:
-      - javelin-magical-init
-      - javelin-stratcom
-      - javelin-util
-      - javelin-uri
-    path: vendor/javelin/src/lib/Resource.js
-  javelin-workflow:
-    provides: javelin-workflow
-    requires:
-      - javelin-stratcom
-      - javelin-request
-      - javelin-dom
-      - javelin-vector
-      - javelin-install
-      - javelin-util
-      - javelin-mask
-      - javelin-uri
-    path: vendor/javelin/src/lib/Workflow.js
-  javelin-behavior:
-    provides: javelin-behavior
-    requires:
-      - javelin-magical-init
-    path: vendor/javelin/src/lib/behavior.js
-  javelin-cookie:
-    provides: javelin-cookie
-    requires:
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/lib/Cookie.js
-  javelin-view-interpreter:
-    provides: javelin-view-interpreter
-    requires:
-      - javelin-view
-      - javelin-install
-    path: vendor/javelin/src/ext/view/ViewInterpreter.js
-  javelin-view:
-    provides: javelin-view
-    requires:
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/ext/view/View.js
-  javelin-view-renderer:
-    provides: javelin-view-renderer
-    requires:
-      - javelin-install
-    path: vendor/javelin/src/ext/view/ViewRenderer.js
-  javelin-view-html:
-    provides: javelin-view-html
-    requires:
-      - javelin-install
-      - javelin-view
-    path: vendor/javelin/src/ext/view/HTMLView.js
-  javelin-view-visitor:
-    provides: javelin-view-visitor
-    requires:
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/ext/view/ViewVisitor.js
-  javelin-behavior-view-placeholder:
-    provides: javelin-behavior-view-placeholder
-    requires:
-      - javelin-behavior
-      - javelin-dom
-      - javelin-view-renderer
-    path: vendor/javelin/src/ext/view/ViewPlaceholder.js
-  javelin-reactor:
-    provides: javelin-reactor
-    requires:
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/ext/reactor/core/Reactor.js
-  javelin-reactornode:
-    provides: javelin-reactornode
-    requires:
-      - javelin-install
-      - javelin-reactor
-      - javelin-util
-      - javelin-reactor-node-calmer
-    path: vendor/javelin/src/ext/reactor/core/ReactorNode.js
-  javelin-reactor-node-calmer:
-    provides: javelin-reactor-node-calmer
-    requires:
-      - javelin-install
-      - javelin-reactor
-      - javelin-util
-    path: vendor/javelin/src/ext/reactor/core/ReactorNodeCalmer.js
-  javelin-dynval:
-    provides: javelin-dynval
-    requires:
-      - javelin-install
-      - javelin-reactornode
-      - javelin-util
-      - javelin-reactor
-    path: vendor/javelin/src/ext/reactor/core/DynVal.js
-  javelin-reactor-dom:
-    provides: javelin-reactor-dom
-    requires:
-      - javelin-dom
-      - javelin-dynval
-      - javelin-reactornode
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/ext/reactor/dom/RDOM.js
-  javelin-fx:
-    provides: javelin-fx
-    requires:
-      - javelin-color
-      - javelin-install
-      - javelin-util
-    path: vendor/javelin/src/ext/fx/FX.js
-  javelin-color:
-    provides: javelin-color
-    requires:
-      - javelin-install
-    path: vendor/javelin/src/ext/fx/Color.js
-  javelin-event:
-    provides: javelin-event
-    requires:
-      - javelin-install
-    path: vendor/javelin/src/core/Event.js
-  javelin-install:
-    provides: javelin-install
-    requires:
-      - javelin-util
-      - javelin-magical-init
-    path: vendor/javelin/src/core/install.js
-  javelin-stratcom:
-    provides: javelin-stratcom
-    requires:
-      - javelin-install
-      - javelin-event
-      - javelin-util
-      - javelin-magical-init
-    path: vendor/javelin/src/core/Stratcom.js
-  facebook:
-    provides: facebook
-    requires:
-      - javelin-behavior
-      - javelin-stratcom
-    path: src/Techmaki/Bundle/HackboardBundle/Resources/public/js/facebook.js
+  scripts:
+    facebook:
+      provides: facebook
+      requires:
+        - javelin-behavior
+        - javelin-stratcom
+      path: src/Techmaki/Bundle/HackboardBundle/Resources/public/js/facebook.js
+      hash: cf1868e87589337cb1d52dd50272792f
+      packages: {  }
+    javelin-magical-init:
+      provides: javelin-magical-init
+      requires: {  }
+      path: vendor/javelin/src/core/init.js
+      hash: 7e646fbaff16b11bd7e2edf5b542460d
+      packages: {  }
+    javelin-util:
+      provides: javelin-util
+      requires: {  }
+      path: vendor/javelin/src/core/util.js
+      hash: 31b9094ac17562fb0c21be9816ab0bd6
+      packages: {  }
+    javelin-typeahead:
+      provides: javelin-typeahead
+      requires:
+        - javelin-install
+        - javelin-dom
+        - javelin-vector
+        - javelin-util
+      path: vendor/javelin/src/lib/control/typeahead/Typeahead.js
+      hash: d8fae45d88777167fa9b008a8a131b51
+      packages: {  }
+    javelin-mask:
+      provides: javelin-mask
+      requires:
+        - javelin-install
+        - javelin-vector
+        - javelin-dom
+      path: vendor/javelin/src/lib/Mask.js
+      hash: eab8f46658fa3b4e6355e704b62073dd
+      packages: {  }
+    javelin-event:
+      provides: javelin-event
+      requires:
+        - javelin-install
+      path: vendor/javelin/src/core/Event.js
+      hash: bed334935cfb7520a1d686fa289c1a06
+      packages: {  }
+    javelin-install:
+      provides: javelin-install
+      requires:
+        - javelin-util
+        - javelin-magical-init
+      path: vendor/javelin/src/core/install.js
+      hash: 0109a5d98430d1c2d213dfdfc03e7f22
+      packages: {  }
+    javelin-stratcom:
+      provides: javelin-stratcom
+      requires:
+        - javelin-install
+        - javelin-event
+        - javelin-util
+        - javelin-magical-init
+      path: vendor/javelin/src/core/Stratcom.js
+      hash: c325a2597968da367b6266bfe72505ce
+      packages: {  }
+    javelin-color:
+      provides: javelin-color
+      requires:
+        - javelin-install
+      path: vendor/javelin/src/ext/fx/Color.js
+      hash: 2a32762908b2132e36951b4b52e33952
+      packages: {  }
+    javelin-fx:
+      provides: javelin-fx
+      requires:
+        - javelin-color
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/ext/fx/FX.js
+      hash: 66662b79eec0cbf73cabf6cc2ffa76fa
+      packages: {  }
+    javelin-dynval:
+      provides: javelin-dynval
+      requires:
+        - javelin-install
+        - javelin-reactornode
+        - javelin-util
+        - javelin-reactor
+      path: vendor/javelin/src/ext/reactor/core/DynVal.js
+      hash: 7026607977ff2f087e938d89ff092450
+      packages: {  }
+    javelin-reactor:
+      provides: javelin-reactor
+      requires:
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/ext/reactor/core/Reactor.js
+      hash: a8dd9f31d3429779bdf18a20c48e1dd7
+      packages: {  }
+    javelin-reactornode:
+      provides: javelin-reactornode
+      requires:
+        - javelin-install
+        - javelin-reactor
+        - javelin-util
+        - javelin-reactor-node-calmer
+      path: vendor/javelin/src/ext/reactor/core/ReactorNode.js
+      hash: 527be574b94bcdd5cd1f294d1bb30d96
+      packages: {  }
+    javelin-reactor-node-calmer:
+      provides: javelin-reactor-node-calmer
+      requires:
+        - javelin-install
+        - javelin-reactor
+        - javelin-util
+      path: vendor/javelin/src/ext/reactor/core/ReactorNodeCalmer.js
+      hash: ed5c51eb9eded9862196aa8964c9b689
+      packages: {  }
+    javelin-reactor-dom:
+      provides: javelin-reactor-dom
+      requires:
+        - javelin-dom
+        - javelin-dynval
+        - javelin-reactornode
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/ext/reactor/dom/RDOM.js
+      hash: 7dd134d1c535c0aa4b84345e8806a5ed
+      packages: {  }
+    javelin-view-html:
+      provides: javelin-view-html
+      requires:
+        - javelin-install
+        - javelin-view
+      path: vendor/javelin/src/ext/view/HTMLView.js
+      hash: 94dd86b961528d8e5f1f3a4e5c371039
+      packages: {  }
+    javelin-view:
+      provides: javelin-view
+      requires:
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/ext/view/View.js
+      hash: a8afe9cfe5207664b2a2d529a6f70d41
+      packages: {  }
+    javelin-view-interpreter:
+      provides: javelin-view-interpreter
+      requires:
+        - javelin-view
+        - javelin-install
+      path: vendor/javelin/src/ext/view/ViewInterpreter.js
+      hash: 0a9b2dc632ec23d9895771692d2beeac
+      packages: {  }
+    javelin-behavior-view-placeholder:
+      provides: javelin-behavior-view-placeholder
+      requires:
+        - javelin-behavior
+        - javelin-dom
+        - javelin-view-renderer
+      path: vendor/javelin/src/ext/view/ViewPlaceholder.js
+      hash: f32e6bac46d1fd3b95cf25f143c0ac10
+      packages: {  }
+    javelin-view-renderer:
+      provides: javelin-view-renderer
+      requires:
+        - javelin-install
+      path: vendor/javelin/src/ext/view/ViewRenderer.js
+      hash: 3f89506eaba1ba6a93f90eb933b40636
+      packages: {  }
+    javelin-view-visitor:
+      provides: javelin-view-visitor
+      requires:
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/ext/view/ViewVisitor.js
+      hash: f825de7e3a8d81955705677c8f53861f
+      packages: {  }
+    javelin-behavior:
+      provides: javelin-behavior
+      requires:
+        - javelin-magical-init
+      path: vendor/javelin/src/lib/behavior.js
+      hash: 17f103cb460cd9fc63b1ab585ae8a61c
+      packages: {  }
+    javelin-tokenizer:
+      provides: javelin-tokenizer
+      requires:
+        - javelin-dom
+        - javelin-util
+        - javelin-stratcom
+        - javelin-install
+      path: vendor/javelin/src/lib/control/tokenizer/Tokenizer.js
+      hash: 096ca471cf823a42aa84b59f6842874f
+      packages: {  }
+    javelin-typeahead-normalizer:
+      provides: javelin-typeahead-normalizer
+      requires:
+        - javelin-install
+      path: vendor/javelin/src/lib/control/typeahead/normalizer/TypeaheadNormalizer.js
+      hash: 44d696cd9b3167c517055307e483baaf
+      packages: {  }
+    javelin-typeahead-composite-source:
+      provides: javelin-typeahead-composite-source
+      requires:
+        - javelin-install
+        - javelin-typeahead-source
+        - javelin-util
+      path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadCompositeSource.js
+      hash: 1a56417a689ef3a4256465efe5509624
+      packages: {  }
+    javelin-typeahead-ondemand-source:
+      provides: javelin-typeahead-ondemand-source
+      requires:
+        - javelin-install
+        - javelin-util
+        - javelin-stratcom
+        - javelin-request
+        - javelin-typeahead-source
+      path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadOnDemandSource.js
+      hash: 2c54efb7ee5dada39fedde6278039136
+      packages: {  }
+    javelin-typeahead-preloaded-source:
+      provides: javelin-typeahead-preloaded-source
+      requires:
+        - javelin-install
+        - javelin-util
+        - javelin-stratcom
+        - javelin-request
+        - javelin-typeahead-source
+      path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadPreloadedSource.js
+      hash: 78184ace12131034592257eb196f5c0e
+      packages: {  }
+    javelin-typeahead-source:
+      provides: javelin-typeahead-source
+      requires:
+        - javelin-install
+        - javelin-util
+        - javelin-dom
+        - javelin-typeahead-normalizer
+      path: vendor/javelin/src/lib/control/typeahead/source/TypeaheadSource.js
+      hash: 8b744862c02587da843d94fb956541a9
+      packages: {  }
+    javelin-cookie:
+      provides: javelin-cookie
+      requires:
+        - javelin-install
+        - javelin-util
+      path: vendor/javelin/src/lib/Cookie.js
+      hash: f2ac951219e6af3c1972501520238fb8
+      packages: {  }
+    javelin-dom:
+      provides: javelin-dom
+      requires:
+        - javelin-magical-init
+        - javelin-install
+        - javelin-util
+        - javelin-vector
+        - javelin-stratcom
+      path: vendor/javelin/src/lib/DOM.js
+      hash: dc024956e6dc317532bd62344d9f7931
+      packages: {  }
+    javelin-history:
+      provides: javelin-history
+      requires:
+        - javelin-stratcom
+        - javelin-install
+        - javelin-uri
+        - javelin-util
+      path: vendor/javelin/src/lib/History.js
+      hash: a4dd154c329aa8fda921c4bc47340209
+      packages: {  }
+    javelin-json:
+      provides: javelin-json
+      requires:
+        - javelin-install
+      path: vendor/javelin/src/lib/JSON.js
+      hash: feb6246872ee03137a61bd4fb4a3cd80
+      packages: {  }
+    javelin-request:
+      provides: javelin-request
+      requires:
+        - javelin-install
+        - javelin-stratcom
+        - javelin-util
+        - javelin-behavior
+        - javelin-json
+        - javelin-dom
+      path: vendor/javelin/src/lib/Request.js
+      hash: f183868617c691720a748faa44a91613
+      packages: {  }
+    javelin-resource:
+      provides: javelin-resource
+      requires:
+        - javelin-magical-init
+        - javelin-stratcom
+        - javelin-util
+        - javelin-uri
+      path: vendor/javelin/src/lib/Resource.js
+      hash: 5bae8207e6ac535c53c0ac29ce5cbb93
+      packages: {  }
+    javelin-uri:
+      provides: javelin-uri
+      requires:
+        - javelin-install
+        - javelin-util
+        - javelin-stratcom
+      path: vendor/javelin/src/lib/URI.js
+      hash: 16306f0935e4724737653c9ca57cbb71
+      packages: {  }
+    javelin-vector:
+      provides: javelin-vector
+      requires:
+        - javelin-install
+        - javelin-event
+      path: vendor/javelin/src/lib/Vector.js
+      hash: 5c540bbd515ff4630e12525c3a880833
+      packages: {  }
+    javelin-workflow:
+      provides: javelin-workflow
+      requires:
+        - javelin-stratcom
+        - javelin-request
+        - javelin-dom
+        - javelin-vector
+        - javelin-install
+        - javelin-util
+        - javelin-mask
+        - javelin-uri
+      path: vendor/javelin/src/lib/Workflow.js
+      hash: 27425183ec8a9d300551e65041786167
+      packages: {  }
+  stylesheets:
+    image-block:
+      provides: image-block
+      requires: {  }
+      path: vendor/xhp/src/xhp/ui/image/block.css
+      hash: 96ecdee6e051b1935b61ad5634e11d36
+      packages: {  }
