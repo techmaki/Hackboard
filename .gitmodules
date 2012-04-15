@@ -82,3 +82,6 @@
 [submodule "vendor/xhp-twitter-bootstrap"]
 	path = vendor/xhp-twitter-bootstrap
 	url = https://github.com/aizatto/xhp-twitter-bootstrap.git
+[submodule "src/Techmaki/Bundle/HackboardBundle"]
+	path = src/Techmaki/Bundle/HackboardBundle
+	url = https://github.com/techmaki/HackboardBundle.git
